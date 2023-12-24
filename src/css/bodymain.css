@@ -1,0 +1,10 @@
+.contenedorbody{
+    display: flex; 
+    justify-content: center;
+    margin:130px auto 0 auto;
+  }
+  
+  .contenedorbody a h1{
+    font-family: 'Teko', sans-serif;
+  }
+  

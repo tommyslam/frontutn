@@ -1,0 +1,33 @@
+.table{
+  margin: 60px auto;
+}
+.custom-card {
+    background-color: #f0f0f0; 
+    color: #333; 
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  
+  .custom-card:hover {
+    background-color: #b3d9ff; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .header {
+    background-color: rgb(98, 200, 166); 
+    color: #fff; 
+  }
+  
+  .cardtext {
+    text-align: start;
+  }
+  
+  
+  .center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+  }

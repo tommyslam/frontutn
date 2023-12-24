@@ -1,0 +1,101 @@
+body {
+  background-image: url('https://www.blogdelfotografo.com/wp-content/uploads/2021/12/fondo_blanco_gris.webp');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  height: 670px;
+}
+
+header .titulo {
+  margin: auto;
+}
+
+header nav a img {
+  width: 110px;
+  height: 110px;
+  border: 3px solid transparent;
+  border-radius: 20%;
+  padding: 4px;
+}
+
+span {
+  color: rgb(98, 200, 166);
+}
+
+.content {
+  margin-top: 100px;
+}
+
+/* DIV Y CAJAS DEL HEADER */
+.contenedorcaja{
+  display: flex; 
+  justify-content: center;
+  margin:200px;
+}
+
+.contenedorcaja a h1{
+  font-family: 'Teko', sans-serif;
+}
+
+.caja1{
+  width: 500px; 
+  height: 200px;  
+ 
+  background-color: transparent; 
+
+  color: rgb(13, 16, 29);
+  text-align: left;
+
+}
+
+
+
+.contenedorcaja .contenedorimg img{
+  width: 90px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 90px;
+  padding: 20px;
+  border: 3px solid transparent; /* Define un borde inicial */
+  border-radius: 50%; /* Hace que el borde sea circular */
+  animation: spin 5s linear infinite; /* Aplica la animación 'spin' */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+
+.caja1 h1{
+  font-family: 'Oswald', sans-serif;
+}
+
+.caja1 p{
+  font-family: 'Playfair Display', serif;
+
+}
+
+.contenedorcaja .contenedorimg .imgcaja1{
+  border-radius: 47%;
+}
