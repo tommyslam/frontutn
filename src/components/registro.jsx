@@ -14,7 +14,7 @@ function Home() {
 
 
   const agregar = () => {
-    Axios.post("http://localhost:3001/create", {
+    Axios.post("https://backutn.vercel.app/create", {
       nombre: nombre,
       email: email,
       password: password

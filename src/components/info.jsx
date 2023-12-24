@@ -12,7 +12,7 @@ const Info = () => {
   }, []);
 
   const getInfo = () => {
-    Axios.get("http://localhost:3001/info")
+    Axios.get("https://backutn.vercel.app/info")
       .then((response) => {
         if (response.data) {
           const formattedData = response.data.map(item => {

@@ -32,7 +32,7 @@ function CargaEmpleados() {
       return;
     }
 
-    Axios.post("http://localhost:3001/create", {
+    Axios.post("https://backutn.vercel.app/create", {
       nombre: nombre,
       apellido:apellido,
       edad: edad,
@@ -62,7 +62,7 @@ function CargaEmpleados() {
   };
 
   const update = () => {
-    Axios.put("http://localhost:3001/update", {
+    Axios.put("https://backutn.vercel.app/update", {
       id: id,
       nombre: nombre,
       apellido: apellido,
@@ -102,7 +102,7 @@ function CargaEmpleados() {
       confirmButtonText: 'Si, eliminarlo!'
     }).then((result) => {
       if (result.isConfirmed) {
-        Axios.delete(`http://localhost:3001/delete/${val.id}`).then((res) => {
+        Axios.delete(`https://backutn.vercel.app/delete/${val.id}`).then((res) => {
           getEmpleados();
           limpiarCampos();
           Swal.fire({
@@ -151,7 +151,7 @@ function CargaEmpleados() {
   }
 
   const getEmpleados = () => {
-    Axios.get("http://localhost:3001/empleados")
+    Axios.get("https://backutn.vercel.app/empleados")
       .then((response) => {
         setEmpleados(response.data);
       })

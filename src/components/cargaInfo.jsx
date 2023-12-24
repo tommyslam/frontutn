@@ -26,7 +26,7 @@ function CargaInfo() {
       return;
     }
 
-    Axios.post("http://localhost:3001/createText", {
+    Axios.post("https://backutn.vercel.app/createText", {
       nombre: nombre,
       fecha: fecha,
       texto: texto
@@ -51,7 +51,7 @@ function CargaInfo() {
   };
 
   const updateInfo = () => {
-    Axios.put("http://localhost:3001/updateinfo", {
+    Axios.put("https://backutn.vercel.app/updateinfo", {
       id: id,
       nombre: nombre,
       fecha: fecha,
@@ -85,7 +85,7 @@ function CargaInfo() {
   };
 
   const getInfo = () => {
-    Axios.get("http://localhost:3001/info")
+    Axios.get("https://backutn.vercel.app/info")
       .then((response) => {
         if (response.data) {
           const formattedData = response.data.map(item => {
@@ -122,7 +122,7 @@ function CargaInfo() {
     }).then((result) => {
       if (result.isConfirmed) {
 
-        Axios.delete(`http://localhost:3001/deleteinfo/${val.id}`).then((res) => {
+        Axios.delete(`https://backutn.vercel.app/deleteinfo/${val.id}`).then((res) => {
           getInfo();
           limpiarCampos();
           Swal.fire({

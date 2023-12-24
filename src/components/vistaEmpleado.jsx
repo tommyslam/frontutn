@@ -12,7 +12,7 @@ function VistaEmpleados() {
   const currentUser = JSON.parse(localStorage.getItem('user'));
 
   const getEmpleados = useCallback(() => {
-    Axios.get("http://localhost:3001/empleados")
+    Axios.get("https://backutn.vercel.app/empleados")
       .then((response) => {
         const filteredEmpleados = response.data.filter(
           (empleado) => empleado.id === currentUser.id
